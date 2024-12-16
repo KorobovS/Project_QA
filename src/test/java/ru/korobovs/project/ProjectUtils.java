@@ -4,10 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 public class ProjectUtils {
 
     static WebDriver createDriver() {
-        return new ChromeDriver(new ChromeOptions());
+        WebDriver driver = new ChromeDriver(new ChromeOptions());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+        return driver;
     }
 
     public static void get(WebDriver driver) {
