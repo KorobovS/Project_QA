@@ -59,6 +59,10 @@ public abstract class BaseTest {
         if (driver != null) {
             driver.quit();
 
+            wait2 = null;
+            wait5 = null;
+            wait10 = null;
+
             ProjectUtils.log("Браузер закрыт");
         }
     }
