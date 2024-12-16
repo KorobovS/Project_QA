@@ -7,6 +7,14 @@ public abstract class BasePage {
 
     public WebDriver driver;
 
+    protected WebDriver getDriver() {
+        if (driver != null) {
+            return driver;
+        }
+        driver = ProjectUtils.createDriver();
+        return driver;
+    }
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
 
