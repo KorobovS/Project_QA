@@ -45,6 +45,7 @@ public abstract class BaseTest {
             getWeb();
         } catch (Exception e) {
             closeDriver();
+            throw new RuntimeException(e);
         }
     }
 
