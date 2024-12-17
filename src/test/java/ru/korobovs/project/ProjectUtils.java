@@ -9,7 +9,7 @@ import java.time.Duration;
 public class ProjectUtils {
 
     static WebDriver createDriver() {
-        WebDriver driver = new ChromeDriver(new ChromeOptions());
+        WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         return driver;
