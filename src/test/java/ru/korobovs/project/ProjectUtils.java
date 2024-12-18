@@ -11,7 +11,7 @@ public class ProjectUtils {
 
     static WebDriver createDriver() {
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
