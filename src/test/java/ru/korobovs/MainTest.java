@@ -9,7 +9,6 @@ public class MainTest extends BaseTest {
 
     @Test
     public void testTitle() {
-        System.out.println("hello");
         String title = new MainPage(getDriver())
                 .getTitle();
 
