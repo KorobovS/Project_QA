@@ -13,6 +13,6 @@ public class MainTest extends BaseTest {
         String title = new MainPage(getDriver())
                 .getTitle();
 
-        Assert.assertEquals(title, "Переходите на DuckDuckGo. Бесплатно и надежно.");
+        Assert.assertEquals(title, "Switch to DuckDuckGo. It’s private and free!");
     }
 }
