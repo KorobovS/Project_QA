@@ -18,17 +18,13 @@ public abstract class BaseTest {
     private WebDriverWait wait10;
 
     protected WebDriver getDriver() {
-        if (driver != null) {
-            return driver;
-        }
-        driver = ProjectUtils.createDriver();
         return driver;
     }
 
     private void startDriver() {
         ProjectUtils.log("Браузер открыт");
 
-        driver = getDriver();
+        driver = ProjectUtils.createDriver();
     }
 
     private void getWeb() {
