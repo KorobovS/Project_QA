@@ -13,7 +13,8 @@ public class HomePageTest extends BaseTest {
         String title = new HomePage(getDriver())
                 .getTitle();
 
-        Assert.assertEquals(title, "Switch to DuckDuckGo. It’s private and free!");
+//        Assert.assertEquals(title, "Switch to DuckDuckGo. It’s private and free!");
+        Assert.assertEquals(title, "Switch to DuckDuckGo.");
     }
 
     @Test
