@@ -24,8 +24,8 @@ jobs:
           distribution: 'corretto'
           cache: 'maven'
 
-      - name: Maven version
-        run: mvn -v
+      - name: Install Chrome
+        run: sudo apt-get install google-chrome-stable
 
       - name: Maven test
         run: mvn test
