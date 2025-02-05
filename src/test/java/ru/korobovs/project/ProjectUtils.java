@@ -15,10 +15,10 @@ public class ProjectUtils {
 
         chromeOptions.addArguments("--lang=en");
         chromeOptions.addArguments("--window-size=1920,1080");
-        chromeOptions.addArguments("--headless=new");
-//        chromeOptions.addArguments("--disable-dev-shm-usage");
-//        chromeOptions.addArguments("--disable-gpu;--no-sandbox");
-//        chromeOptions.addArguments("--remote-allow-origins=*");
+//        chromeOptions.addArguments("--headless=new");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--disable-gpu;--no-sandbox");
+        chromeOptions.addArguments("--remote-allow-origins=*");
 
         WebDriver driver = new ChromeDriver(chromeOptions);
 //        WebDriver driver = new FirefoxDriver();
